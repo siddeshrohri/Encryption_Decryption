@@ -1,5 +1,5 @@
 # Encryption_Decryption
-ENCRYPTION
+# ENCRYPTION
 This Java code showcases a highly secure and efficient file encryption system using the industry-standard Advanced Encryption Standard (AES) in Cipher Block Chaining (CBC) mode with PKCS5Padding. The code demonstrates an exemplary implementation of cryptographic best practices, ensuring data confidentiality, integrity, and robust password management.
 
 Let's look at some of the aspects of this code:-
@@ -51,3 +51,40 @@ Industry-Standard Algorithms and Practices:
 
 The code utilizes industry-standard cryptographic algorithms, making it a robust and trustworthy solution for file encryption.
 In conclusion, this code impresses with its comprehensive implementation of state-of-the-art cryptographic practices, delivering an advanced and secure file encryption system in Java. Its strong password generation, AES encryption, IV usage, and secure key derivation make it an exemplary model for secure data protection, earning recognition for its performance, reliability, and adherence to cryptographic best practices.
+
+# DECRYPTION
+This Java code demonstrates an outstanding file decryption system, effectively complementing the encryption functionality with its superior security and user-friendly interface. Let's explore the remarkable aspects of this code:
+
+User-friendly Interface:
+
+The code greets users with a prompt to enter the password required for decryption, ensuring a seamless and interactive experience.
+The password is obtained from the user using the Scanner class, facilitating easy and secure user input.
+
+Advanced AES Decryption:
+
+The code employs AES decryption in Cipher Block Chaining (CBC) mode with PKCS5Padding, ensuring the integrity of decrypted data.
+An impressive feature is the use of the provided Initialization Vector (IV) as an IvParameterSpec during decryption, matching the IV used during encryption for correct data recovery.
+Efficient File Extension Handling:
+
+The code intelligently extracts the original file extension and delimiter from the encrypted file, ensuring the decrypted output retains its appropriate file extension.
+The decrypted file is saved with the original file extension, making it user-friendly and avoiding any confusion during further usage.
+Secure Secret Key Generation:
+
+The code generates a secure secret key for AES decryption using the provided password and the same salt used during encryption.
+The key is derived using the industry-standard Password-Based Key Derivation Function 2 (PBKDF2) with HMAC-SHA256, ensuring a robust and cryptographically strong key.
+File Decryption and Output:
+
+The code efficiently decrypts the encrypted file and stores the decrypted output in a new file, preserving the original data without any data loss.
+The decrypted file is saved with a new path that includes the correct file extension, enhancing clarity and usability.
+Secure Data Handling:
+
+The code carefully reads the salt, IV, and extension information from the encrypted file, and securely writes the decrypted data to the output file.
+The implementation guarantees secure handling of sensitive information, ensuring that no data is unintentionally exposed.
+Exception Handling and Clean Code:
+
+The code features robust exception handling to catch and handle any potential errors during decryption gracefully.
+It maintains the same level of clean, organized code structure as observed in the encryption implementation, enhancing readability and maintainability.
+Industry-Standard Cryptographic Practices:
+
+The code follows widely accepted cryptographic practices, ensuring that the decryption process is reliable and secure.
+In summary, this Java code portrays an impressive file decryption system that complements its counterpart encryption system. Its user-friendly interface, efficient decryption process, and secure cryptographic practices make it a formidable solution for safely and seamlessly recovering encrypted data. The code showcases a comprehensive understanding of cryptographic principles, reflecting the skills and expertise of the developer.
